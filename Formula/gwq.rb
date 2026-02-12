@@ -5,21 +5,21 @@
 class Gwq < Formula
   desc "Git Worktree Manager for efficient worktree operations"
   homepage "https://github.com/d-kuro/gwq"
-  version "0.0.12"
+  version "0.0.13"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/d-kuro/gwq/releases/download/v0.0.12/gwq_Darwin_x86_64.tar.gz"
-      sha256 "43531281073c8dec8028a89897fb74a3855a48e6a15864a5a8b9e83204b17a2e"
+      url "https://github.com/d-kuro/gwq/releases/download/v0.0.13/gwq_Darwin_x86_64.tar.gz"
+      sha256 "614e89f47dc0d146308c0d1555135eeaf7bcee45fee553a83fe506573832d97f"
 
       def install
         bin.install "gwq"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/d-kuro/gwq/releases/download/v0.0.12/gwq_Darwin_arm64.tar.gz"
-      sha256 "8c8ea513427ba5f1f614619eeb84b51b0dabb2f7bb2208f55f49aa0aeab52874"
+      url "https://github.com/d-kuro/gwq/releases/download/v0.0.13/gwq_Darwin_arm64.tar.gz"
+      sha256 "984049e2185e8ad32b1289a8e16c7dbdcd762931235c063d2d71077941c59a37"
 
       def install
         bin.install "gwq"
@@ -29,15 +29,15 @@ class Gwq < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/d-kuro/gwq/releases/download/v0.0.12/gwq_Linux_x86_64.tar.gz"
-      sha256 "7108c0087318282bbf738fb3ea33c1745d29e45b72b3f80d9e04170e02939ad8"
+      url "https://github.com/d-kuro/gwq/releases/download/v0.0.13/gwq_Linux_x86_64.tar.gz"
+      sha256 "d36da6669d3a63b412b281e223328af26313b4b77fe8ef4b32e824afaada23aa"
       def install
         bin.install "gwq"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/d-kuro/gwq/releases/download/v0.0.12/gwq_Linux_arm64.tar.gz"
-      sha256 "3f8e800892cbf12f09b7cb80b6dbb88d9f942a52e964a0a4463429942ce2e789"
+      url "https://github.com/d-kuro/gwq/releases/download/v0.0.13/gwq_Linux_arm64.tar.gz"
+      sha256 "f92dfad3e776f8707b1e98e363bdf0c9472321bbb78e3d653fd51d117f5d1b2d"
       def install
         bin.install "gwq"
       end
