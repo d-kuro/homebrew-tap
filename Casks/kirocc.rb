@@ -3,7 +3,7 @@ cask "kirocc" do
   name "kirocc"
   desc "Local proxy server that relays Anthropic Messages API requests to the Kiro backend"
   homepage "https://github.com/d-kuro/kirocc"
-  version "0.0.6"
+  version "0.0.7"
 
   livecheck do
     skip "Auto-generated on release."
@@ -14,22 +14,22 @@ cask "kirocc" do
   on_macos do
     on_intel do
       url "https://github.com/d-kuro/kirocc/releases/download/v#{version}/kirocc_#{version}_darwin_amd64.tar.gz"
-      sha256 "3270d761e5edcb31d2c6e3ffd4a495091ae7986ee3d4a99e48baacda1eea3fd7"
+      sha256 "131fa8ff558dc7dbc94ce613b04b8fabcbef9adddc31aad7aa50688f370bbf4e"
     end
     on_arm do
       url "https://github.com/d-kuro/kirocc/releases/download/v#{version}/kirocc_#{version}_darwin_arm64.tar.gz"
-      sha256 "2c1a452db4fb75db05afffe25ceb879296f795e49a5a832bf836a6f2e69207ca"
+      sha256 "be577fcd7eb1755c0e46659ce0b487abd2cbfd2fc2e3ec0eb565d5ce186494d0"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/d-kuro/kirocc/releases/download/v#{version}/kirocc_#{version}_linux_amd64.tar.gz"
-      sha256 "1de1eabd2a4bee92874da34b415e9ae1af8792c65d67f8c6cfa43fea1e1e00aa"
+      sha256 "27ffcd1298332de5c1d4c7132978821d9576b3ba5108d4cfb1be31674f9d5e12"
     end
     on_arm do
       url "https://github.com/d-kuro/kirocc/releases/download/v#{version}/kirocc_#{version}_linux_arm64.tar.gz"
-      sha256 "6f34b2dac8ad40ab5a98cc95c2ddc7ec93cb65f82be04f1a453ad0e16652f65c"
+      sha256 "3294ebc54a3d7799b510ea88e636316947a26e6652705115b85cd58194bd71dc"
     end
   end
 
