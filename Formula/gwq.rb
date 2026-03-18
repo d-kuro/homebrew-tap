@@ -5,23 +5,23 @@
 class Gwq < Formula
   desc "Git Worktree Manager for efficient worktree operations"
   homepage "https://github.com/d-kuro/gwq"
-  version "0.0.14"
+  version "0.0.15"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/d-kuro/gwq/releases/download/v0.0.14/gwq_Darwin_x86_64.tar.gz"
-      sha256 "346b5e2baaf72d74caec3f28d1fc0d534477b824e72ffadf0ff00c4b3f8d19fe"
+      url "https://github.com/d-kuro/gwq/releases/download/v0.0.15/gwq_Darwin_x86_64.tar.gz"
+      sha256 "c5629cd29b11470d3399c6ccfd3eb2b5894d68be6d7dd56c4fa18a39236a9e80"
 
-      def install
+      define_method(:install) do
         bin.install "gwq"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/d-kuro/gwq/releases/download/v0.0.14/gwq_Darwin_arm64.tar.gz"
-      sha256 "5bb48d8b9cae2c67f3cdcfb8454a8ab2b05937eda05dfcf441cb1d0f7c61123a"
+      url "https://github.com/d-kuro/gwq/releases/download/v0.0.15/gwq_Darwin_arm64.tar.gz"
+      sha256 "cf1702a8c5b574ff6a3afe83611aee5ea775406e543bd05036a5d4b9dc162a87"
 
-      def install
+      define_method(:install) do
         bin.install "gwq"
       end
     end
@@ -29,16 +29,16 @@ class Gwq < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/d-kuro/gwq/releases/download/v0.0.14/gwq_Linux_x86_64.tar.gz"
-      sha256 "086da4e67f8f7f9aed5ae972d2e062fd2828a11b89826db09996c2e232a66d22"
-      def install
+      url "https://github.com/d-kuro/gwq/releases/download/v0.0.15/gwq_Linux_x86_64.tar.gz"
+      sha256 "72b9d80a184181f58b2b973017b70c25c8025c25b7bea4b6d2a6b05eeade944f"
+      define_method(:install) do
         bin.install "gwq"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/d-kuro/gwq/releases/download/v0.0.14/gwq_Linux_arm64.tar.gz"
-      sha256 "e285285f8a6f3704df44f31e93f0bfef24af5f797b54fcf44425f26b558b47fa"
-      def install
+      url "https://github.com/d-kuro/gwq/releases/download/v0.0.15/gwq_Linux_arm64.tar.gz"
+      sha256 "b1506b63c7977ae5af55156d5d372b087251d707a76973382f520508cae898a7"
+      define_method(:install) do
         bin.install "gwq"
       end
     end
