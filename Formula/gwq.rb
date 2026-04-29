@@ -5,21 +5,21 @@
 class Gwq < Formula
   desc "Git Worktree Manager for efficient worktree operations"
   homepage "https://github.com/d-kuro/gwq"
-  version "0.0.19"
+  version "0.0.20"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/d-kuro/gwq/releases/download/v0.0.19/gwq_Darwin_x86_64.tar.gz"
-      sha256 "0d295d294115f226f43726015d9428e36b589bd1b2eeefb5e0b0403fcb45d9bf"
+      url "https://github.com/d-kuro/gwq/releases/download/v0.0.20/gwq_Darwin_x86_64.tar.gz"
+      sha256 "b4fe86f5bf6e971895fb2d3ebe3267d9a812a857c153885cb3fb0f5f22ffc365"
 
       define_method(:install) do
         bin.install "gwq"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/d-kuro/gwq/releases/download/v0.0.19/gwq_Darwin_arm64.tar.gz"
-      sha256 "f4febf1ee9f9ba6c56b51ced274e47fd02f6aafa92823978efffd5ac001875be"
+      url "https://github.com/d-kuro/gwq/releases/download/v0.0.20/gwq_Darwin_arm64.tar.gz"
+      sha256 "9c52eda84a1cd6792eb813f8c5ae74b7cc80aa1a0d0fb8edbd7f19e21133e1af"
 
       define_method(:install) do
         bin.install "gwq"
@@ -29,15 +29,15 @@ class Gwq < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/d-kuro/gwq/releases/download/v0.0.19/gwq_Linux_x86_64.tar.gz"
-      sha256 "85980e348373442ae3cae7c0de5f053360849f3447dc45caf437d233b408d7c4"
+      url "https://github.com/d-kuro/gwq/releases/download/v0.0.20/gwq_Linux_x86_64.tar.gz"
+      sha256 "ef475d3c5970b5b2db4f996a0cc8156586b8c0f3792349a317301c3895d94a10"
       define_method(:install) do
         bin.install "gwq"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/d-kuro/gwq/releases/download/v0.0.19/gwq_Linux_arm64.tar.gz"
-      sha256 "f57ca767d6d7dc8fcbfa3d8c4c41bb4ddb6b6d53e6c615f42bcd44f3d5438538"
+      url "https://github.com/d-kuro/gwq/releases/download/v0.0.20/gwq_Linux_arm64.tar.gz"
+      sha256 "9dccec36f7df03728ae44b5b3b12c5f1bf486e8eeafb60aefde71907006b3d82"
       define_method(:install) do
         bin.install "gwq"
       end
